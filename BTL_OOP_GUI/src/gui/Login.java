@@ -44,6 +44,7 @@ public class Login extends javax.swing.JFrame {
         setTitle("Login");
         setAlwaysOnTop(true);
         setBackground(new java.awt.Color(228, 238, 244));
+        setLocation(new java.awt.Point(300, 200));
         setResizable(false);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
@@ -176,7 +177,8 @@ public class Login extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1);
 
-        pack();
+        setSize(new java.awt.Dimension(916, 558));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void usernameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameTxtFieldActionPerformed

@@ -169,7 +169,7 @@ public class ChuyenVienFrame3 extends javax.swing.JFrame {
         jLabel12.setText("null");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 270, -1, -1));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\Icon (4).png")); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Icon (4).png"))); // NOI18N
         jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel13MouseClicked(evt);

@@ -131,7 +131,7 @@ public class Login extends javax.swing.JFrame {
                 .addGap(121, 121, 121))
         );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/rb_2061 1.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rb_2061 1.png"))); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(13, 4, 103));

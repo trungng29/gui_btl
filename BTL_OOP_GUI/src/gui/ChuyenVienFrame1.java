@@ -2,6 +2,7 @@ package gui;
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -68,10 +69,10 @@ public class ChuyenVienFrame1 extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("EMS");
@@ -122,14 +123,16 @@ public class ChuyenVienFrame1 extends javax.swing.JFrame {
         jPanel3.setMinimumSize(new java.awt.Dimension(240, 240));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(144, 176, 194));
         jButton1.setText("Nhân Viên");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 140, 50));
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 240, 70));
 
+        jButton2.setBackground(new java.awt.Color(144, 176, 194));
         jButton2.setText("Thông tin Cá nhân");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -141,15 +144,16 @@ public class ChuyenVienFrame1 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 140, 50));
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 240, 70));
 
+        jButton3.setBackground(new java.awt.Color(144, 176, 194));
         jButton3.setText("Dự Án");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 140, 50));
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 240, 70));
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -332,23 +336,62 @@ public class ChuyenVienFrame1 extends javax.swing.JFrame {
         jPanel10.setBackground(new java.awt.Color(228, 238, 244));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel4.setBackground(new java.awt.Color(137, 160, 199));
+        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel12MouseExited(evt);
+            }
+        });
+        jPanel10.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 170, 110));
+
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel6MouseExited(evt);
+            }
+        });
+        jPanel10.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 170, 110));
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel7MouseExited(evt);
+            }
+        });
+        jPanel10.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 170, 110));
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel4MouseExited(evt);
+            }
         });
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel10.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 170, 110));
-
-        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 170, 110));
-
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 170, 110));
-
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 170, 110));
 
         jTabbedPane2.addTab("tab3", jPanel10);
 
@@ -364,7 +407,7 @@ public class ChuyenVienFrame1 extends javax.swing.JFrame {
         // TODO add your handling code here:
 
     }//GEN-LAST:event_jLabel3MouseEntered
-
+ 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
         int tmp = JOptionPane.showConfirmDialog(this,"Confirm Logout?", "Logout", JOptionPane.YES_NO_OPTION);
@@ -400,10 +443,69 @@ public class ChuyenVienFrame1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jPanel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseClicked
+        // TODO add your handling code here:
+        new ChuyenVienFrame3().setVisible(true);
+        
+    }//GEN-LAST:event_jPanel12MouseClicked
+
+    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
+        // TODO add your handling code here:
+        new ChuyenVienFrame3().setVisible(true);
+    }//GEN-LAST:event_jPanel6MouseClicked
+
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
+        // TODO add your handling code here:
+        new ChuyenVienFrame3().setVisible(true);
+    }//GEN-LAST:event_jPanel7MouseClicked
+
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         // TODO add your handling code here:
+
+        new ChuyenVienFrame3().setVisible(true);
     }//GEN-LAST:event_jPanel4MouseClicked
 
+    private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
+        // TODO add your handling code here:
+        jPanel4.setBackground( new Color(112, 132, 165));
+    }//GEN-LAST:event_jPanel4MouseEntered
+
+    private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
+        // TODO add your handling code here:
+        jPanel4.setBackground( new Color(255, 255, 255));
+    }//GEN-LAST:event_jPanel4MouseExited
+
+    private void jPanel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseEntered
+        // TODO add your handling code here:
+        jPanel12.setBackground( new Color(112, 132, 165));
+    }//GEN-LAST:event_jPanel12MouseEntered
+
+    private void jPanel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseExited
+        // TODO add your handling code here:
+        jPanel12.setBackground( new Color(255, 255, 255));
+    }//GEN-LAST:event_jPanel12MouseExited
+
+    private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
+        // TODO add your handling code here:
+         jPanel6.setBackground( new Color(112, 132, 165));
+    }//GEN-LAST:event_jPanel6MouseEntered
+
+    private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
+        // TODO add your handling code here:
+         jPanel6.setBackground( new Color(255, 255, 255));
+    }//GEN-LAST:event_jPanel6MouseExited
+
+    private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
+        // TODO add your handling code here:
+        jPanel7.setBackground( new Color(112, 132, 165));
+    }//GEN-LAST:event_jPanel7MouseEntered
+
+    private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
+        // TODO add your handling code here:
+         jPanel7.setBackground( new Color(255, 255, 255));
+    }//GEN-LAST:event_jPanel7MouseExited
+    
+    
     /**
      * @param args the command line arguments
      */

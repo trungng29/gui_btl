@@ -1,0 +1,5 @@
+DA01|Phat trien he thong quan ly nhan su|25/11/2024|NV01|NV02|NV03|NV04|NV05
+DA02|Phat trien chien dich quang cao online|01/02/2023|NV03|NV08|NV09|NV19|NV20
+DA03|Xay dung he thong quan ly marketing|15/03/2024|NV02|NV18|NV19|NV20
+DA04|Phan tich thi truong va doi thu|20/07/2022|NV03|NV06|NV07|NV08|NV09|NV17
+DA05|Nghien cuu machine learning|10/05/2023|NV05|NV10|NV11|NV12

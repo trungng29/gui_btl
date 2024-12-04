@@ -108,8 +108,6 @@ public class AdminFrame1 extends javax.swing.JFrame {
     }
     
     private void setDAData(){
-        //setup AccName
-        AccName.setText(nv.getTenNV());
         //Setup DSDuAn
         DefaultTableModel modelDSDA = (DefaultTableModel) nhanVienTable1.getModel();
         DefaultTableModel modelDSNVDA = (DefaultTableModel)nhanVienTGDATable.getModel();
@@ -266,6 +264,9 @@ public class AdminFrame1 extends javax.swing.JFrame {
     
     
     private void setData(){
+        //setup AccName
+        AccName.setText(nv.getTenNV());
+        
         glassPane = new JPanel();
         glassPane.setOpaque(false); // Glass pane trong suốt
         glassPane.setLayout(new GridBagLayout());

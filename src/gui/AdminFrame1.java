@@ -112,7 +112,6 @@ public class AdminFrame1 extends javax.swing.JFrame {
         DefaultTableModel modelDSDA = (DefaultTableModel) nhanVienTable1.getModel();
         DefaultTableModel modelDSNVDA = (DefaultTableModel)nhanVienTGDATable.getModel();
         int cnt1 = 1;
-        int cnt2 = 1;
         for(DuAn x: dsDA.getDSDuAn()){
             modelDSDA.addRow(new Object[]{cnt1++, x.getMaDA(), x.getTenDA(), x.getNgayThucHien()});
         }
